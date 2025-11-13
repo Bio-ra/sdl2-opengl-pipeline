@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj.d"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj.d"
+  "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj"
+  "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj.d"
   "OpenGL_SDL2_Project.exe"
   "OpenGL_SDL2_Project.exe.manifest"
   "OpenGL_SDL2_Project.pdb"

@@ -1,5 +1,10 @@
+#include <GL/glew.h>
+#include <SDL2/SDL.h>
 #include "app.h"
+#include "shaderLoader.h"
 #include <iostream>
+
+
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -41,15 +46,34 @@ void InitialiseProgram() {
         exit(-1);
     }
 
+    glewExperimental = GL_TRUE;
+    GLenum glewStatus = glewInit();
+    if (glewStatus != GLEW_OK) {
+        std::cerr << "Failed to initialize GLEW: "
+                  << glewGetErrorString(glewStatus) << std::endl;
+        SDL_GL_DeleteContext(glContext);
+        SDL_DestroyWindow(window);
+        SDL_Quit();
+        exit(-1);
+    }
+
     // optional: set viewport and clear color
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 }
 
+//#################################################
+// Main application loop
+//#################################################
+
 void MainLoop() {
     bool running = true;
     SDL_Event e;
 
+    GLuint shaderProgram = createShaderProgram("vertexShader.glsl", "fragmentShader.glsl");
+    glUseProgram(shaderProgram);
+
+    
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT) running = false;

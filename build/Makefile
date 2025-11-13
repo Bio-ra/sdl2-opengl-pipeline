@@ -176,6 +176,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shaderLoader.obj: src/shaderLoader.cpp.obj
+.PHONY : src/shaderLoader.obj
+
+# target to build an object file
+src/shaderLoader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj
+.PHONY : src/shaderLoader.cpp.obj
+
+src/shaderLoader.i: src/shaderLoader.cpp.i
+.PHONY : src/shaderLoader.i
+
+# target to preprocess a source file
+src/shaderLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.i
+.PHONY : src/shaderLoader.cpp.i
+
+src/shaderLoader.s: src/shaderLoader.cpp.s
+.PHONY : src/shaderLoader.s
+
+# target to generate assembly for a file
+src/shaderLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s
+.PHONY : src/shaderLoader.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/shaderLoader.obj
+	@echo ... src/shaderLoader.i
+	@echo ... src/shaderLoader.s
 .PHONY : help
 
 

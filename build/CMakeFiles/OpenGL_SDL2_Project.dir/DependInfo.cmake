@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/A/Desktop/project/src/app.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj.d"
   "C:/Users/A/Desktop/project/src/main.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj.d"
+  "C:/Users/A/Desktop/project/src/shaderLoader.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
