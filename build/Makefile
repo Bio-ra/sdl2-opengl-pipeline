@@ -176,6 +176,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/quad.obj: src/quad.cpp.obj
+.PHONY : src/quad.obj
+
+# target to build an object file
+src/quad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj
+.PHONY : src/quad.cpp.obj
+
+src/quad.i: src/quad.cpp.i
+.PHONY : src/quad.i
+
+# target to preprocess a source file
+src/quad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.i
+.PHONY : src/quad.cpp.i
+
+src/quad.s: src/quad.cpp.s
+.PHONY : src/quad.s
+
+# target to generate assembly for a file
+src/quad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s
+.PHONY : src/quad.cpp.s
+
 src/shaderLoader.obj: src/shaderLoader.cpp.obj
 .PHONY : src/shaderLoader.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/quad.obj
+	@echo ... src/quad.i
+	@echo ... src/quad.s
 	@echo ... src/shaderLoader.obj
 	@echo ... src/shaderLoader.i
 	@echo ... src/shaderLoader.s

@@ -1,15 +1,22 @@
 #include <GL/glew.h>
 #include <SDL2/SDL.h>
-#include "app.h"
-#include "shaderLoader.h"
 #include <iostream>
 
+
+#include "quad.h"
+#include "app.h"
+#include "shaderLoader.h"
 
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
 SDL_Window* window = nullptr; 
 SDL_GLContext glContext = nullptr;
+
+//#################################################
+// Initialisation function
+//#################################################
+
 
 void InitialiseProgram() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
@@ -57,9 +64,10 @@ void InitialiseProgram() {
         exit(-1);
     }
 
-    // optional: set viewport and clear color
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+
+    CreateQuadGeometry();
 }
 
 //#################################################
@@ -88,11 +96,24 @@ void MainLoop() {
         }
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        DrawQuad();
+
         SDL_GL_SwapWindow(window);
     }
+
+    glDeleteProgram(shaderProgram);
 }
 
+
+//#################################################
+// cleanup function
+//#################################################
+
 void Cleanup() {
+
+    DeleteQuadGeometry();
+
     if (glContext) {
         SDL_GL_DeleteContext(glContext);
         glContext = nullptr;

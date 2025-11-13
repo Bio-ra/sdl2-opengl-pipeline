@@ -116,11 +116,27 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\A\Desktop\project\src\shaderLoader.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.s
 
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: C:/Users/A/Desktop/project/src/quad.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj -c C:\Users\A\Desktop\project\src\quad.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\A\Desktop\project\src\quad.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\A\Desktop\project\src\quad.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.s
+
 # Object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_OBJECTS = \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj" \
-"CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj"
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj"
 
 # External object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_EXTERNAL_OBJECTS =
@@ -128,12 +144,13 @@ OpenGL_SDL2_Project_EXTERNAL_OBJECTS =
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/build.make
 OpenGL_SDL2_Project.exe: C:/msys64/mingw64/lib/libglew32.dll.a
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/linkLibs.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/objects1.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OpenGL_SDL2_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenGL_SDL2_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGL_SDL2_Project.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/A/Desktop/project/src/fragmentShader.glsl C:/Users/A/Desktop/project/build/fragmentShader.glsl
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/A/Desktop/project/src/vertexShader.glsl C:/Users/A/Desktop/project/build/vertexShader.glsl

@@ -20,6 +20,7 @@ set(SOURCES
     src/main.cpp
     src/app.cpp
     src/shaderLoader.cpp
+    src/quad.cpp
 )
 
 # Define the executable
