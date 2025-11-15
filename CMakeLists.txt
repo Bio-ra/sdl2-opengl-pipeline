@@ -21,6 +21,8 @@ set(SOURCES
     src/app.cpp
     src/shaderLoader.cpp
     src/quad.cpp
+    src/textureHandler.cpp
+    src/shaderUnifromHandler.cpp
 )
 
 # Define the executable
@@ -35,18 +37,3 @@ target_link_libraries(${PROJECT_NAME}
     ${GLEW_LIBRARIES}
     ${SDL2_LIBRARIES}
 )
-
-# -------------------------------
-# Copy shaders to the build directory
-# -------------------------------
-# Collect all .glsl shader files in src/ (absolute paths)
-file(GLOB SHADERS RELATIVE "${CMAKE_SOURCE_DIR}/src" "${CMAKE_SOURCE_DIR}/src/*.glsl")
-
-# Copy each shader to the executable directory after building
-foreach(SHADER ${SHADERS})
-    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_SOURCE_DIR}/src/${SHADER}"
-        "$<TARGET_FILE_DIR:${PROJECT_NAME}>/${SHADER}"
-    )
-endforeach()
