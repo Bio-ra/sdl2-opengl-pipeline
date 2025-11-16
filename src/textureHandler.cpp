@@ -1,10 +1,19 @@
-#include "Texture.h"
-#include <SDL2/SDL_image.h>
+#include "textureHandler.h"
+
 #include <iostream>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
 Texture::Texture(const std::string& path) : id(0) {
-    SDL_Surface* surface = IMG_Load(path.c_str());
-    if (!surface) {
+    int width, height, channels;
+    
+    // Flip images vertically (OpenGL expects origin at bottom-left)
+    //stbi_set_flip_vertically_on_load(true);
+    
+    unsigned char* data = stbi_load(path.c_str(), &width, &height, &channels, 0);
+    
+    if (!data) {
         std::cerr << "Failed to load texture: " << path << std::endl;
         return;
     }
@@ -12,9 +21,14 @@ Texture::Texture(const std::string& path) : id(0) {
     glGenTextures(1, &id);
     glBindTexture(GL_TEXTURE_2D, id);
     
-    GLenum format = (surface->format->BytesPerPixel == 4) ? GL_RGBA : GL_RGB;
-    glTexImage2D(GL_TEXTURE_2D, 0, format, surface->w, surface->h, 
-                 0, format, GL_UNSIGNED_BYTE, surface->pixels);
+    // Determine format based on channels
+    GLenum format = GL_RGB;
+    if (channels == 1) format = GL_RED;
+    else if (channels == 3) format = GL_RGB;
+    else if (channels == 4) format = GL_RGBA;
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 
+                 0, format, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
     
     // CLAMP_TO_EDGE is better for 2D sprites (no edge bleeding)
@@ -23,7 +37,7 @@ Texture::Texture(const std::string& path) : id(0) {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     
-    SDL_FreeSurface(surface);
+    stbi_image_free(data);
 }
 
 Texture::~Texture() {

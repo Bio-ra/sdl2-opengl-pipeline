@@ -1,7 +1,13 @@
-#version 410 core
+#version 330 core
+
+in vec2 TexCoord;  // From vertex shader
 out vec4 FragColor;
-in vec3 ourColor;
+
+uniform sampler2D spriteTexture;
+uniform vec4 spriteColor;  // Tint color (default: white)
+uniform float alpha;       // Transparency
 
 void main() {
-    FragColor = vec4(ourColor, 1.0);
+    vec4 texColor = texture(spriteTexture, TexCoord);
+    FragColor = texColor * spriteColor * vec4(1.0, 1.0, 1.0, alpha);
 }

@@ -22,7 +22,7 @@ set(SOURCES
     src/shaderLoader.cpp
     src/quad.cpp
     src/textureHandler.cpp
-    src/shaderUnifromHandler.cpp
+    src/shaderUniformHandler.cpp
 )
 
 # Define the executable

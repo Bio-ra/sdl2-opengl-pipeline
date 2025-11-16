@@ -1,10 +1,11 @@
-#version 410 core
-layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aColor;
+#version 330 core
 
-out vec3 ourColor;
+layout (location = 0) in vec3 aPos;       // Changed to vec3 to match your quad
+layout (location = 1) in vec2 aTexCoord;
+
+out vec2 TexCoord;
 
 void main() {
-    gl_Position = vec4(aPos, 1.0);
-    ourColor = aColor;
+    gl_Position = vec4(aPos, 1.0);  // Use xyz from quad, w=1.0
+    TexCoord = aTexCoord;
 }

@@ -131,12 +131,44 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\A\Desktop\project\src\quad.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.s
 
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: C:/Users/A/Desktop/project/src/textureHandler.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj -c C:\Users\A\Desktop\project\src\textureHandler.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\A\Desktop\project\src\textureHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\A\Desktop\project\src\textureHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.s
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: C:/Users/A/Desktop/project/src/shaderUniformHandler.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj -c C:\Users\A\Desktop\project\src\shaderUniformHandler.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\A\Desktop\project\src\shaderUniformHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\A\Desktop\project\src\shaderUniformHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.s
+
 # Object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_OBJECTS = \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" \
-"CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj"
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj"
 
 # External object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_EXTERNAL_OBJECTS =
@@ -145,19 +177,15 @@ OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/build.make
 OpenGL_SDL2_Project.exe: C:/msys64/mingw64/lib/libglew32.dll.a
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/linkLibs.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/objects1.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenGL_SDL2_Project.exe"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying src/vertexShader.glsl to build directory"
-	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/A/Desktop/project/src/vertexShader.glsl C:/Users/A/Desktop/project/build/OpenGL_SDL2_Project/
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying src/fragmentShader.glsl to build directory"
-	"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/A/Desktop/project/src/fragmentShader.glsl C:/Users/A/Desktop/project/build/OpenGL_SDL2_Project/
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\A\Desktop\project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OpenGL_SDL2_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGL_SDL2_Project.dir\link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying shader files to output directory"
-	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/A/Desktop/project/src C:/Users/A/Desktop/project/build
 
 # Rule to build all files generated by this target.
 CMakeFiles/OpenGL_SDL2_Project.dir/build: OpenGL_SDL2_Project.exe

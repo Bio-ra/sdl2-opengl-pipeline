@@ -224,6 +224,54 @@ src/shaderLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s
 .PHONY : src/shaderLoader.cpp.s
 
+src/shaderUniformHandler.obj: src/shaderUniformHandler.cpp.obj
+.PHONY : src/shaderUniformHandler.obj
+
+# target to build an object file
+src/shaderUniformHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj
+.PHONY : src/shaderUniformHandler.cpp.obj
+
+src/shaderUniformHandler.i: src/shaderUniformHandler.cpp.i
+.PHONY : src/shaderUniformHandler.i
+
+# target to preprocess a source file
+src/shaderUniformHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.i
+.PHONY : src/shaderUniformHandler.cpp.i
+
+src/shaderUniformHandler.s: src/shaderUniformHandler.cpp.s
+.PHONY : src/shaderUniformHandler.s
+
+# target to generate assembly for a file
+src/shaderUniformHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s
+.PHONY : src/shaderUniformHandler.cpp.s
+
+src/textureHandler.obj: src/textureHandler.cpp.obj
+.PHONY : src/textureHandler.obj
+
+# target to build an object file
+src/textureHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj
+.PHONY : src/textureHandler.cpp.obj
+
+src/textureHandler.i: src/textureHandler.cpp.i
+.PHONY : src/textureHandler.i
+
+# target to preprocess a source file
+src/textureHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.i
+.PHONY : src/textureHandler.cpp.i
+
+src/textureHandler.s: src/textureHandler.cpp.s
+.PHONY : src/textureHandler.s
+
+# target to generate assembly for a file
+src/textureHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s
+.PHONY : src/textureHandler.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +293,12 @@ help:
 	@echo ... src/shaderLoader.obj
 	@echo ... src/shaderLoader.i
 	@echo ... src/shaderLoader.s
+	@echo ... src/shaderUniformHandler.obj
+	@echo ... src/shaderUniformHandler.i
+	@echo ... src/shaderUniformHandler.s
+	@echo ... src/textureHandler.obj
+	@echo ... src/textureHandler.i
+	@echo ... src/textureHandler.s
 .PHONY : help
 
 

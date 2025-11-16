@@ -343,4 +343,6 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
  C:\Users\A\Desktop\project\src\quad.h \
  C:\Users\A\Desktop\project\src\app.h \
- C:\Users\A\Desktop\project\src\shaderLoader.h
+ C:\Users\A\Desktop\project\src\shaderLoader.h \
+ C:\Users\A\Desktop\project\src\shaderUniformHandler.h \
+ C:\Users\A\Desktop\project\src\textureHandler.h

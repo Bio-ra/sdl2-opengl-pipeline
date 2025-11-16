@@ -243,6 +243,9 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/mingw64/bin/pkg-config.exe
 
+//The directory containing a CMake configuration file for SDL2_image.
+SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
+
 //Path to a library.
 pkgcfg_lib_SDL2_SDL2:FILEPATH=C:/msys64/mingw64/lib/libSDL2.dll.a
 

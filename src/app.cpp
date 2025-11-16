@@ -6,7 +6,8 @@
 #include "quad.h"
 #include "app.h"
 #include "shaderLoader.h"
-
+#include "shaderUniformHandler.h"
+#include "textureHandler.h"
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -80,9 +81,13 @@ void MainLoop() {
 
     GLuint shaderProgram = createShaderProgram("vertexShader.glsl", "fragmentShader.glsl");
     glUseProgram(shaderProgram);
-
     
+    Shader shader(shaderProgram);
+    Texture dogtexture("../src/dog.png");
+
     while (running) {
+
+        //##### SDL POLL EVENT #####
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT) running = false;
             else if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) running = false;
@@ -94,9 +99,15 @@ void MainLoop() {
                 glViewport(0, 0, newW, newH);
             }
         }
-
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        
+        shader.use();
+        
+        
+        
+        shader.setTexture("spriteTexture", dogtexture.getID(), 0);
+        
         DrawQuad();
 
         SDL_GL_SwapWindow(window);
