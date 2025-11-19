@@ -3,7 +3,7 @@
 Shader::Shader(GLuint programID) : programID(programID) {}
 
 Shader::~Shader() {
-        glDeleteProgram(programID);
+    // Program deletion is handled externally
 }
 
 void Shader::use() {
@@ -16,12 +16,16 @@ GLuint Shader::getID() const {
 
 void Shader::setFloat(const std::string& name, float value) {
     GLint loc = glGetUniformLocation(programID, name.c_str());
-    glUniform1f(loc, value);
+    if (loc != -1) {
+        glUniform1f(loc, value);
+    }
 }
 
 void Shader::setInt(const std::string& name, int value) {
     GLint loc = glGetUniformLocation(programID, name.c_str());
-    glUniform1i(loc, value);
+    if (loc != -1) {
+        glUniform1i(loc, value);
+    }
 }
 
 void Shader::setTexture(const std::string& name, GLuint textureID, int unit) {

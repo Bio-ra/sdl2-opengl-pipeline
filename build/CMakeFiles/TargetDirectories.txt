@@ -1,3 +1,0 @@
-C:/Users/A/Desktop/project/build/CMakeFiles/OpenGL_SDL2_Project.dir
-C:/Users/A/Desktop/project/build/CMakeFiles/edit_cache.dir
-C:/Users/A/Desktop/project/build/CMakeFiles/rebuild_cache.dir

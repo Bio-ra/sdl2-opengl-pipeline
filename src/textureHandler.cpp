@@ -9,14 +9,18 @@ Texture::Texture(const std::string& path) : id(0) {
     int width, height, channels;
     
     // Flip images vertically (OpenGL expects origin at bottom-left)
-    //stbi_set_flip_vertically_on_load(true);
+    // Uncomment if needed: stbi_set_flip_vertically_on_load(true);
     
     unsigned char* data = stbi_load(path.c_str(), &width, &height, &channels, 0);
     
     if (!data) {
-        std::cerr << "Failed to load texture: " << path << std::endl;
+        std::cerr << "Failed to load texture: " << path 
+                  << " - " << stbi_failure_reason() << std::endl;
         return;
     }
+    
+    std::cout << "Loaded texture: " << path << " (" << width << "x" << height 
+              << ", " << channels << " channels)" << std::endl;
     
     glGenTextures(1, &id);
     glBindTexture(GL_TEXTURE_2D, id);
