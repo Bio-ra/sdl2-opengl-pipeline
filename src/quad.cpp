@@ -11,13 +11,13 @@ GLuint quadEBO = 0;
 //#################################################
 void CreateQuadGeometry() {
     // Define quad vertices (4 corners)
-    // Format: position (x, y, z) + color (r, g, b)
+    // Format: position (x, y) + texCoords (u, v)
     float vertices[] = {
-        // positions         // colors
-        -0.5f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // top-left (red)
-         0.5f,  0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // top-right (green)
-         0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  // bottom-right (blue)
-        -0.5f, -0.5f, 0.0f,  1.0f, 1.0f, 0.0f   // bottom-left (yellow)
+        // positions      // texture coords
+        -0.5f,  0.5f,     0.0f, 0.0f,  // top-left
+         0.5f,  0.5f,     1.0f, 0.0f,  // top-right
+         0.5f, -0.5f,     1.0f, 1.0f,  // bottom-right
+        -0.5f, -0.5f,     0.0f, 1.0f   // bottom-left
     };
     
     // Define indices for two triangles that make up the quad
@@ -44,11 +44,11 @@ void CreateQuadGeometry() {
     
     // 5. CONFIGURE VERTEX ATTRIBUTES
     // Position attribute (location = 0 in shader)
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     
-    // Color attribute (location = 1 in shader)
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    // Texture coordinate attribute (location = 1 in shader)
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
     glEnableVertexAttribArray(1);
     
     // 6. UNBIND

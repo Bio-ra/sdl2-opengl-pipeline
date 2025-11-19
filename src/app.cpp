@@ -80,6 +80,10 @@ void MainLoop() {
     SDL_Event e;
 
     GLuint shaderProgram = createShaderProgram("vertexShader.glsl", "fragmentShader.glsl");
+    if (shaderProgram == 0) {
+        std::cerr << "Failed to create shader program!" << std::endl;
+        return;
+    }
     glUseProgram(shaderProgram);
     
     Shader shader(shaderProgram);
