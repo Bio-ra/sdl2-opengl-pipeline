@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/A/Desktop/project/src/app.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj.d"
-  "C:/Users/A/Desktop/project/src/main.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj.d"
-  "C:/Users/A/Desktop/project/src/quad.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj.d"
-  "C:/Users/A/Desktop/project/src/shaderLoader.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj.d"
-  "C:/Users/A/Desktop/project/src/shaderUniformHandler.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj.d"
-  "C:/Users/A/Desktop/project/src/textureHandler.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/app.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/main.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/quad.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/shaderLoader.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/shaderUniformHandler.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj.d"
+  "C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/textureHandler.cpp" "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj" "gcc" "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

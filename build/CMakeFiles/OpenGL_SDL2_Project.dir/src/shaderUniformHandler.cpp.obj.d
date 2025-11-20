@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: \
- C:\Users\A\Desktop\project\src\shaderUniformHandler.cpp \
- C:\Users\A\Desktop\project\src\shaderUniformHandler.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.h \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/include/crtdefs.h C:/msys64/mingw64/include/corecrt.h \
  C:/msys64/mingw64/include/_mingw.h \

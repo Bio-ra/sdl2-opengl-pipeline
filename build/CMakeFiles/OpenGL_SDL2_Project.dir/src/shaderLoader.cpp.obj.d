@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: \
- C:\Users\A\Desktop\project\src\shaderLoader.cpp \
- C:\Users\A\Desktop\project\src\ShaderLoader.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.cpp \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\ShaderLoader.h \
  C:/msys64/mingw64/include/c++/15.2.0/string \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \

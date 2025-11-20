@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
- C:\Users\A\Desktop\project\src\app.cpp \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.cpp \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/include/crtdefs.h C:/msys64/mingw64/include/corecrt.h \
  C:/msys64/mingw64/include/_mingw.h \
@@ -341,8 +341,8 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/istream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
- C:\Users\A\Desktop\project\src\quad.h \
- C:\Users\A\Desktop\project\src\app.h \
- C:\Users\A\Desktop\project\src\shaderLoader.h \
- C:\Users\A\Desktop\project\src\shaderUniformHandler.h \
- C:\Users\A\Desktop\project\src\textureHandler.h
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h

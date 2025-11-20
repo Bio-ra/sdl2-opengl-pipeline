@@ -11,13 +11,13 @@ GLuint quadEBO = 0;
 //#################################################
 void CreateQuadGeometry() {
     // Define quad vertices (4 corners)
-    // Format: position (x, y, z) + color (r, g, b)
+    // Format: position (x, y) + uv (u, v)
     float vertices[] = {
-        // positions         // colors
-        -0.5f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // top-left (red)
-         0.5f,  0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // top-right (green)
-         0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  // bottom-right (blue)
-        -0.5f, -0.5f, 0.0f,  1.0f, 1.0f, 0.0f   // bottom-left (yellow)
+        // positions   // UVs
+        -0.5f,  0.5f,   0.0f, 0.0f,  // top-left
+         0.5f,  0.5f,   1.0f, 0.0f,  // top-right
+         0.5f, -0.5f,   1.0f, 1.0f,  // bottom-right
+        -0.5f, -0.5f,   0.0f, 1.0f   // bottom-left
     };
     
     // Define indices for two triangles that make up the quad
@@ -43,19 +43,20 @@ void CreateQuadGeometry() {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     
     // 5. CONFIGURE VERTEX ATTRIBUTES
-    // Position attribute (location = 0 in shader)
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+    // Now using 2D positions and 2D UVs
+    // Position attribute (location = 0 in shader) - vec2
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     
-    // Color attribute (location = 1 in shader)
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    // UV attribute (location = 1 in shader) - vec2
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
     glEnableVertexAttribArray(1);
     
     // 6. UNBIND
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
     
-    std::cout << "Quad geometry created successfully" << std::endl;
+    std::cout << "Quad geometry created successfully (2D positions + UVs)" << std::endl;
 }
 
 //#################################################

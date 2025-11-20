@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: \
- C:\Users\A\Desktop\project\src\quad.cpp \
- C:\Users\A\Desktop\project\src\quad.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.cpp \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.h \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/include/crtdefs.h C:/msys64/mingw64/include/corecrt.h \
  C:/msys64/mingw64/include/_mingw.h \
