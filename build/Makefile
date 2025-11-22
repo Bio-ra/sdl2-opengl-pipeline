@@ -152,6 +152,30 @@ src/app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.s
 .PHONY : src/app.cpp.s
 
+src/camera.obj: src/camera.cpp.obj
+.PHONY : src/camera.obj
+
+# target to build an object file
+src/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj
+.PHONY : src/camera.cpp.obj
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -248,6 +272,30 @@ src/shaderUniformHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s
 .PHONY : src/shaderUniformHandler.cpp.s
 
+src/sprite.obj: src/sprite.cpp.obj
+.PHONY : src/sprite.obj
+
+# target to build an object file
+src/sprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj
+.PHONY : src/sprite.cpp.obj
+
+src/sprite.i: src/sprite.cpp.i
+.PHONY : src/sprite.i
+
+# target to preprocess a source file
+src/sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.i
+.PHONY : src/sprite.cpp.i
+
+src/sprite.s: src/sprite.cpp.s
+.PHONY : src/sprite.s
+
+# target to generate assembly for a file
+src/sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s
+.PHONY : src/sprite.cpp.s
+
 src/textureHandler.obj: src/textureHandler.cpp.obj
 .PHONY : src/textureHandler.obj
 
@@ -272,6 +320,30 @@ src/textureHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s
 .PHONY : src/textureHandler.cpp.s
 
+src/transformation.obj: src/transformation.cpp.obj
+.PHONY : src/transformation.obj
+
+# target to build an object file
+src/transformation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj
+.PHONY : src/transformation.cpp.obj
+
+src/transformation.i: src/transformation.cpp.i
+.PHONY : src/transformation.i
+
+# target to preprocess a source file
+src/transformation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.i
+.PHONY : src/transformation.cpp.i
+
+src/transformation.s: src/transformation.cpp.s
+.PHONY : src/transformation.s
+
+# target to generate assembly for a file
+src/transformation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.s
+.PHONY : src/transformation.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -284,6 +356,9 @@ help:
 	@echo ... src/app.obj
 	@echo ... src/app.i
 	@echo ... src/app.s
+	@echo ... src/camera.obj
+	@echo ... src/camera.i
+	@echo ... src/camera.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
@@ -296,9 +371,15 @@ help:
 	@echo ... src/shaderUniformHandler.obj
 	@echo ... src/shaderUniformHandler.i
 	@echo ... src/shaderUniformHandler.s
+	@echo ... src/sprite.obj
+	@echo ... src/sprite.i
+	@echo ... src/sprite.s
 	@echo ... src/textureHandler.obj
 	@echo ... src/textureHandler.i
 	@echo ... src/textureHandler.s
+	@echo ... src/transformation.obj
+	@echo ... src/transformation.i
+	@echo ... src/transformation.s
 .PHONY : help
 
 

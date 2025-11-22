@@ -23,6 +23,9 @@ set(SOURCES
     src/quad.cpp
     src/textureHandler.cpp
     src/shaderUniformHandler.cpp
+    src/transformation.cpp
+    src/camera.cpp
+    src/sprite.cpp
 )
 
 # Define the executable

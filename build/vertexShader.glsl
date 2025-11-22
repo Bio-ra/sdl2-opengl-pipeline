@@ -1,11 +1,17 @@
-#version 330 core
+#version 410 core
 
-layout (location = 0) in vec3 aPos;       // Changed to vec3 to match your quad
-layout (location = 1) in vec2 aTexCoord;
+layout(location = 0) in vec2 aPos;
+layout(location = 1) in vec2 aUV;
 
-out vec2 TexCoord;
+out vec2 vUV;
 
-void main() {
-    gl_Position = vec4(aPos, 1.0);  // Use xyz from quad, w=1.0
-    TexCoord = aTexCoord;
+uniform mat3 uModel;
+uniform mat3 uProjection;
+
+void main()
+{
+    vec3 world = uModel * vec3(aPos, 1.0);
+    vec3 proj  = uProjection * world;
+    gl_Position = vec4(proj.xy, 0.0, 1.0);
+    vUV = aUV;
 }

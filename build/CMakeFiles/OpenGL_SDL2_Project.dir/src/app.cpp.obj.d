@@ -345,4 +345,7 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
  C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.h \
  C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.h \
  C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.h \
+ C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.h

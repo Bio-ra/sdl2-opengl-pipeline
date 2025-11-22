@@ -161,6 +161,51 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.s
 
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/transformation.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.s
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/camera.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.s
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/sprite.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.s
+
 # Object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_OBJECTS = \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj" \
@@ -168,7 +213,10 @@ OpenGL_SDL2_Project_OBJECTS = \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj" \
-"CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj"
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
 
 # External object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_EXTERNAL_OBJECTS =
@@ -179,12 +227,15 @@ OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/build.make
 OpenGL_SDL2_Project.exe: C:/msys64/mingw64/lib/libglew32.dll.a
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/linkLibs.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/objects1.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OpenGL_SDL2_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable OpenGL_SDL2_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGL_SDL2_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
