@@ -62,8 +62,12 @@
     },
     "cSpell.words": [
         "GLEW",
+        "Integerv",
         "keysym",
         "OPENGL",
-        "SDLK"
+        "Parameteri",
+        "SDLK",
+        "stbi",
+        "Storei"
     ]
 }

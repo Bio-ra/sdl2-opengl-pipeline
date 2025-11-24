@@ -7,12 +7,12 @@
 
 Texture::Texture(const std::string& path)
 {
-    // Ensure stb_image flips images vertically on load so textures appear correctly
-    // with typical OpenGL UV coordinates (0,0 at bottom-left).
+    // Typical OpenGL UV coordinates (0,0 at bottom-left).
     stbi_set_flip_vertically_on_load(1);
 
     int width = 0, height = 0, channels = 0;
     unsigned char* data = stbi_load(path.c_str(), &width, &height, &channels, 0);
+    //std::cout<<"image: "<<path<<" w:"<<width<<" h:"<<height<<" c:"<<channels<<std::endl; // debug
     if (data) {
         GLenum internalFormat = GL_RGB;
         GLenum format = GL_RGB;
@@ -30,14 +30,22 @@ Texture::Texture(const std::string& path)
         glGenTextures(1, &id);
         glBindTexture(GL_TEXTURE_2D, id);
 
-        glTexImage2D(GL_TEXTURE_2D, 0, internalFormat, width, height, 0, format, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
+        // ensure byte alignment
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
-        // Default texture params (adjust if you have other code)
+        // upload image data
+        glTexImage2D(GL_TEXTURE_2D, 0, (GLint)internalFormat, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+
+        // set nearest filtering (no blur)
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+        // glGenerateMipmap(GL_TEXTURE_2D);
+        // glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+
+        // Default texture params
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         glBindTexture(GL_TEXTURE_2D, 0);
     } else {

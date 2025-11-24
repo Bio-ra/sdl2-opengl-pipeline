@@ -71,6 +71,10 @@ void InitialiseProgram() {
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 
+    glEnable(GL_BLEND);
+    // Prefer separate to handle color and alpha correctly
+    glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+
     CreateQuadGeometry();
 }
 
@@ -87,21 +91,18 @@ void MainLoop() {
     
     Shader shader(shaderProgram);
     Texture dogtexture("dog.png");
+    Texture bombTexture("spriteAtlas_bomb_walk.png");
 
     // create sprites using the Texture we loaded
     Sprite sprite1(&dogtexture);
     sprite1.setPosition(200.0f, 300.0f);
     sprite1.setSize(200.0f, 200.0f);
 
-    Sprite sprite2(&dogtexture);
+    Sprite sprite2(&bombTexture);
     sprite2.setPosition(600.0f, 150.0f);
-    sprite2.setSize(150.0f, 150.0f);
-    sprite2.setRotation(0.3f);
-
-    Sprite sprite3(&dogtexture);
-    sprite3.setPosition(-100.0f, -150.0f);
-    sprite3.setSize(350.0f, 350.0f);
-    sprite3.setRotation(0.6f);
+    sprite2.setSize(19.0f * 8.0f, 19.0f * 8.0f);
+    sprite2.setFrame(0, 0, 4, 1);
+    
 
     // get uniform locations once
     GLint locProjection = glGetUniformLocation(shaderProgram, "uProjection");
@@ -121,6 +122,15 @@ void MainLoop() {
     int lastMouseX = 0;
     int lastMouseY = 0;
     
+    // timing / animation state (put before the main loop)
+    Uint64 perfFreq = SDL_GetPerformanceFrequency();
+    Uint64 lastTicks = SDL_GetPerformanceCounter();
+    float animTime = 0.0f;
+    const int atlasCols = 4;
+    const int atlasRows = 1;
+    const int totalFrames = atlasCols * atlasRows;
+    const float animFPS = 8.0f; // frames per second
+
     while (running) {
 
         //##### SDL POLL EVENT #####
@@ -167,12 +177,21 @@ void MainLoop() {
         // Draw sprites (handles texture bind, model & tint uniforms, and DrawQuad)
         sprite1.draw(locModel, locTint);
         sprite2.draw(locModel, locTint);
-        sprite3.draw(locModel, locTint);
-        
+
+        // Update sprite animation frame based on time
+        Uint64 currentTicks = SDL_GetPerformanceCounter();
+        Uint64 deltaTicks = currentTicks - lastTicks;
+        lastTicks = currentTicks;
+        animTime += (float)deltaTicks / (float)perfFreq;
+        if (animTime >= 1.0f / animFPS) {
+            sprite2.nextFrame();
+            animTime = 0.0f;
+        }
+
         SDL_GL_SwapWindow(window);
 
-    glDeleteProgram(shaderProgram);
     }
+    glDeleteProgram(shaderProgram);
 }
 
 //#################################################
@@ -180,7 +199,7 @@ void MainLoop() {
 //#################################################
 
 void Cleanup() {
-
+    
     DeleteQuadGeometry();
 
     if (glContext) {
