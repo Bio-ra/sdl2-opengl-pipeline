@@ -18,17 +18,34 @@ void Camera2D::zoomBy(float factor) { if (factor > 0.0f) zoom *= factor; }
 
 // view matrix = S(1/zoom) * R(-rotation) * T(-pos)
 Mat3 Camera2D::getViewMatrix() const {
-    Mat3 s = Mat3::Scale(1.0f / zoom, 1.0f / zoom);
-    Mat3 r = Mat3::Rotation(-rotation);
-    Mat3 t = Mat3::Translation(-x, -y);
-    return s * r * t;
+    // Mat3 s = Mat3::Scale(1.0f / zoom, 1.0f / zoom);
+    // Mat3 r = Mat3::Rotation(-rotation);
+    // Mat3 t = Mat3::Translation(-x, -y);
+    // return s * r * t;
+    return Mat3::Scale(1.0f / zoom, 1.0f / zoom) * 
+           Mat3::Rotation(-rotation) * 
+           Mat3::Translation(-x, -y);
 }
 
 Mat3 Camera2D::getProjectionFromScreen(float width, float height, bool originTopLeft) const {
     return Mat3::OrthoFromScreen(width, height, originTopLeft);
 }
 
-Mat3 Camera2D::getViewProjection(float width, float height, bool originTopLeft) const {
-    Mat3 proj = getProjectionFromScreen(width, height, originTopLeft);
-    return proj * getViewMatrix();
+// previous signature:
+// Mat3 Camera2D::getViewProjection(float width, float height, bool centerOrigin) const
+Mat3 Camera2D::getViewProjection(float width, float height, bool centerOrigin, bool includeZoom) const {
+    // Mat3 proj = getProjectionFromScreen(width, height, centerOrigin);
+
+    // use camera zoom unless includeZoom == false
+    float effectiveZoom = includeZoom ? this->zoom : 1.0f;
+
+    // Mat3 s = Mat3::Scale(1.0f / effectiveZoom, 1.0f / effectiveZoom);
+    // Mat3 r = Mat3::Rotation(-rotation);
+    // Mat3 t = Mat3::Translation(-x, -y);
+
+    // return proj * s * r * t;
+    return getProjectionFromScreen(width, height, centerOrigin) * 
+           Mat3::Scale(1.0f / effectiveZoom, 1.0f / effectiveZoom) * 
+           Mat3::Rotation(-rotation) * 
+           Mat3::Translation(-x, -y);
 }

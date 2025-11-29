@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\main.cpp \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\main.cpp \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.h \
  C:/msys64/mingw64/include/SDL2/SDL.h \
  C:/msys64/mingw64/include/SDL2/SDL_main.h \
  C:/msys64/mingw64/include/SDL2/SDL_stdinc.h \

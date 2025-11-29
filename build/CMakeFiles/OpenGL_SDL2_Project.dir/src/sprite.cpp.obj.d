@@ -1,7 +1,7 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.cpp \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.h \
  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -15,7 +15,7 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: \
  C:/msys64/mingw64/include/vadefs.h \
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.h \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h C:/msys64/mingw64/include/GL/glu.h \
@@ -104,4 +104,10 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.h
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\quad.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\spriteBatch.h \
+ C:/msys64/mingw64/include/c++/15.2.0/vector \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc

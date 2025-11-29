@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.cpp \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.cpp \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/include/crtdefs.h C:/msys64/mingw64/include/corecrt.h \
  C:/msys64/mingw64/include/_mingw.h \
@@ -341,11 +341,17 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/istream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.h \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.h
+ C:/msys64/mingw64/include/c++/15.2.0/vector \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\quad.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderLoader.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderUniformHandler.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\camera.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\spriteBatch.h

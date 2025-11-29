@@ -1,3 +1,3 @@
-C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/build/CMakeFiles/OpenGL_SDL2_Project.dir
-C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/build/CMakeFiles/edit_cache.dir
-C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/build/CMakeFiles/rebuild_cache.dir
+C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/build/CMakeFiles/OpenGL_SDL2_Project.dir
+C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/build/CMakeFiles/edit_cache.dir
+C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/build/CMakeFiles/rebuild_cache.dir

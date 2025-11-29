@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.cpp \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.h \
  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \

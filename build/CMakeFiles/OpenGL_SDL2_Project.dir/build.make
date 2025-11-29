@@ -52,10 +52,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline
+CMAKE_SOURCE_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build
+CMAKE_BINARY_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OpenGL_SDL2_Project.dir/depend.make
@@ -73,138 +73,153 @@ CMakeFiles/OpenGL_SDL2_Project.dir/codegen:
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/main.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/main.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\main.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\main.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\main.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\main.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\main.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\main.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/app.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/app.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/app.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\app.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\app.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\app.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/shaderLoader.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/shaderLoader.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderLoader.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderLoader.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderLoader.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderLoader.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderLoader.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderLoader.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/quad.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/quad.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\quad.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\quad.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/quad.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\quad.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\quad.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\quad.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/textureHandler.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/textureHandler.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\textureHandler.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/shaderUniformHandler.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/shaderUniformHandler.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\shaderUniformHandler.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\shaderUniformHandler.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/transformation.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/transformation.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\transformation.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\transformation.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\transformation.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/camera.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/camera.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\camera.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\camera.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\camera.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\camera.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\camera.cpp.s
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
-CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: C:/Users/b/Desktop/p2/sdl2-opengl-pipeline/src/sprite.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/sprite.cpp
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj -c C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.cpp
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.i
 
 CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\sprite.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\sprite.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\sprite.cpp.s
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/flags.make
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/includes_CXX.rsp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj: C:/Users/b/Desktop/projekt/sdl2-opengl-pipeline/src/spriteBatch.cpp
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj: CMakeFiles/OpenGL_SDL2_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj -MF CMakeFiles\OpenGL_SDL2_Project.dir\src\spriteBatch.cpp.obj.d -o CMakeFiles\OpenGL_SDL2_Project.dir\src\spriteBatch.cpp.obj -c C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\spriteBatch.cpp
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\spriteBatch.cpp > CMakeFiles\OpenGL_SDL2_Project.dir\src\spriteBatch.cpp.i
+
+CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\spriteBatch.cpp -o CMakeFiles\OpenGL_SDL2_Project.dir\src\spriteBatch.cpp.s
 
 # Object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_OBJECTS = \
@@ -216,7 +231,8 @@ OpenGL_SDL2_Project_OBJECTS = \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj" \
 "CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj" \
-"CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj" \
+"CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj"
 
 # External object files for target OpenGL_SDL2_Project
 OpenGL_SDL2_Project_EXTERNAL_OBJECTS =
@@ -230,12 +246,13 @@ OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHan
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/camera.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj
+OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/build.make
 OpenGL_SDL2_Project.exe: C:/msys64/mingw64/lib/libglew32.dll.a
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/linkLibs.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/objects1.rsp
 OpenGL_SDL2_Project.exe: CMakeFiles/OpenGL_SDL2_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable OpenGL_SDL2_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable OpenGL_SDL2_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OpenGL_SDL2_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -247,6 +264,6 @@ CMakeFiles/OpenGL_SDL2_Project.dir/clean:
 .PHONY : CMakeFiles/OpenGL_SDL2_Project.dir/clean
 
 CMakeFiles/OpenGL_SDL2_Project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\b\Desktop\p2\sdl2-opengl-pipeline C:\Users\b\Desktop\p2\sdl2-opengl-pipeline C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles\OpenGL_SDL2_Project.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles\OpenGL_SDL2_Project.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/OpenGL_SDL2_Project.dir/depend
 

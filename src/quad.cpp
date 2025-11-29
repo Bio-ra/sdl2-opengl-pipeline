@@ -1,86 +1,98 @@
 #include "quad.h"
-#include <iostream>
+#include <vector>
 
-// Global OpenGL objects for the quad
 GLuint quadVAO = 0;
 GLuint quadVBO = 0;
 GLuint quadEBO = 0;
 
-//#################################################
-// Create Quad Geometry (VBO, VAO, EBO)
-//#################################################
+static const int MAX_QUADS = 1024;
+static const int VERTICES_PER_QUAD = 4;
+static const int INDICES_PER_QUAD = 6;
+
+// #################################################
+// Create Quad Geometry (VBO, VAO, EBO) - dynamic VBO
+// #################################################
 void CreateQuadGeometry() {
-    // Define quad vertices (4 corners)
-    // Format: position (x, y) + uv (u, v)
-    float vertices[] = {
-        // positions   // UVs
-        -0.5f,  0.5f,   0.0f, 0.0f,  // top-left
-         0.5f,  0.5f,   1.0f, 0.0f,  // top-right
-         0.5f, -0.5f,   1.0f, 1.0f,  // bottom-right
-        -0.5f, -0.5f,   0.0f, 1.0f   // bottom-left
-    };
-    
-    // Define indices for two triangles that make up the quad
-    unsigned int indices[] = {
-        0, 1, 3,  // first triangle
-        1, 2, 3   // second triangle
-    };
-    
-    // 1. GENERATE BUFFERS
+    std::vector<unsigned int> indices;
+    indices.reserve(MAX_QUADS * INDICES_PER_QUAD); // simplified
+    for (int i = 0; i < MAX_QUADS; ++i) {
+        unsigned int base = i * 4;
+        indices.push_back(base + 0);
+        indices.push_back(base + 1);
+        indices.push_back(base + 3);
+        indices.push_back(base + 1);
+        indices.push_back(base + 2);
+        indices.push_back(base + 3);
+    }
+
     glGenVertexArrays(1, &quadVAO);
     glGenBuffers(1, &quadVBO);
     glGenBuffers(1, &quadEBO);
-    
-    // 2. BIND VAO FIRST
+
     glBindVertexArray(quadVAO);
-    
-    // 3. BIND AND SET VBO (vertex data)
+
     glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    
-    // 4. BIND AND SET EBO (index data)
+    glBufferData(GL_ARRAY_BUFFER, MAX_QUADS * VERTICES_PER_QUAD * 4 * sizeof(float), nullptr, GL_DYNAMIC_DRAW);
+
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, quadEBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    
-    // 5. CONFIGURE VERTEX ATTRIBUTES
-    // Now using 2D positions and 2D UVs
-    // Position attribute (location = 0 in shader) - vec2
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
+
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    
-    // UV attribute (location = 1 in shader) - vec2
+
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    
-    // 6. UNBIND
+
+    // glBindBuffer(GL_ARRAY_BUFFER, 0); // not needed
+    glBindVertexArray(0);
+
+    // std::cout << "Dynamic quad geometry created (capacity " << MAX_QUADS << " quads)" << std::endl;
+}
+
+// #################################################
+// Update dynamic vertex buffer
+// #################################################
+void UpdateQuadBuffer(const float* vertices, int quadCount) {
+    if (quadCount <= 0) return;
+
+    glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
+    // GLsizeiptr size = (GLsizeiptr)quadCount * VERTICES_PER_QUAD * 4 * sizeof(float);
+    glBufferSubData(GL_ARRAY_BUFFER, 0, quadCount * VERTICES_PER_QUAD * 4 * sizeof(float), vertices);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-    
-    std::cout << "Quad geometry created successfully (2D positions + UVs)" << std::endl;
 }
 
-//#################################################
-// Draw the Quad
-//#################################################
+// #################################################
+// Draw the Quad(s)
+// #################################################
 void DrawQuad() {
+    DrawQuads(1);
+}
+
+void DrawQuads(int quadCount) {
+    if (quadCount <= 0) return;
+
     glBindVertexArray(quadVAO);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    // GLsizei indexCount = quadCount * INDICES_PER_QUAD;
+    glDrawElements(GL_TRIANGLES, quadCount * INDICES_PER_QUAD, GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
 }
 
-//#################################################
+// #################################################
 // Delete Quad Geometry
-//#################################################
+// #################################################
 void DeleteQuadGeometry() {
-    if (quadVAO != 0) {
+    // if (quadVAO != 0) {
+    if (quadVAO) {
         glDeleteVertexArrays(1, &quadVAO);
         quadVAO = 0;
     }
-    if (quadVBO != 0) {
+    // if (quadVBO != 0) {
+    if (quadVBO) {
         glDeleteBuffers(1, &quadVBO);
         quadVBO = 0;
     }
-    if (quadEBO != 0) {
+    // if (quadEBO != 0) {
+    if (quadEBO) {
         glDeleteBuffers(1, &quadEBO);
         quadEBO = 0;
     }

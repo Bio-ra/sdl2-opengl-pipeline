@@ -53,10 +53,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline
+CMAKE_SOURCE_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build
+CMAKE_BINARY_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,14 +84,14 @@ clean: CMakeFiles/OpenGL_SDL2_Project.dir/clean
 CMakeFiles/OpenGL_SDL2_Project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target OpenGL_SDL2_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target OpenGL_SDL2_Project"
 .PHONY : CMakeFiles/OpenGL_SDL2_Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OpenGL_SDL2_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/OpenGL_SDL2_Project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles 0
 .PHONY : CMakeFiles/OpenGL_SDL2_Project.dir/rule
 
 # Convenience name for target.
@@ -101,7 +101,7 @@ OpenGL_SDL2_Project: CMakeFiles/OpenGL_SDL2_Project.dir/rule
 # codegen rule for target.
 CMakeFiles/OpenGL_SDL2_Project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target OpenGL_SDL2_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target OpenGL_SDL2_Project"
 .PHONY : CMakeFiles/OpenGL_SDL2_Project.dir/codegen
 
 # clean rule for target.

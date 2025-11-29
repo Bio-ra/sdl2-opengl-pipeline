@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/shaderUniformHandler.cpp.obj.d"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.obj.d"
+  "CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj"
+  "CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj.d"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj.d"
   "CMakeFiles/OpenGL_SDL2_Project.dir/src/transformation.cpp.obj"

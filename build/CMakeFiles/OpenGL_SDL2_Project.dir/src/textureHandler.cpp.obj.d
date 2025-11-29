@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.cpp \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\textureHandler.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.cpp \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\textureHandler.h \
  C:/msys64/mingw64/include/GL/glew.h C:/msys64/mingw64/include/inttypes.h \
  C:/msys64/mingw64/include/crtdefs.h C:/msys64/mingw64/include/corecrt.h \
  C:/msys64/mingw64/include/_mingw.h \
@@ -149,7 +149,7 @@ CMakeFiles/OpenGL_SDL2_Project.dir/src/textureHandler.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/istream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
- C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\src\stb_image.h \
+ C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\src\stb_image.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \

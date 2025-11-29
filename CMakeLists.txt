@@ -26,6 +26,7 @@ set(SOURCES
     src/transformation.cpp
     src/camera.cpp
     src/sprite.cpp
+    src/spriteBatch.cpp
 )
 
 # Define the executable

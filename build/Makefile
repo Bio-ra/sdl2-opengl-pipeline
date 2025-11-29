@@ -56,10 +56,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline
+CMAKE_SOURCE_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build
+CMAKE_BINARY_DIR = C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\p2\sdl2-opengl-pipeline\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\b\Desktop\projekt\sdl2-opengl-pipeline\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -296,6 +296,30 @@ src/sprite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/sprite.cpp.s
 .PHONY : src/sprite.cpp.s
 
+src/spriteBatch.obj: src/spriteBatch.cpp.obj
+.PHONY : src/spriteBatch.obj
+
+# target to build an object file
+src/spriteBatch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.obj
+.PHONY : src/spriteBatch.cpp.obj
+
+src/spriteBatch.i: src/spriteBatch.cpp.i
+.PHONY : src/spriteBatch.i
+
+# target to preprocess a source file
+src/spriteBatch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.i
+.PHONY : src/spriteBatch.cpp.i
+
+src/spriteBatch.s: src/spriteBatch.cpp.s
+.PHONY : src/spriteBatch.s
+
+# target to generate assembly for a file
+src/spriteBatch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_SDL2_Project.dir\build.make CMakeFiles/OpenGL_SDL2_Project.dir/src/spriteBatch.cpp.s
+.PHONY : src/spriteBatch.cpp.s
+
 src/textureHandler.obj: src/textureHandler.cpp.obj
 .PHONY : src/textureHandler.obj
 
@@ -374,6 +398,9 @@ help:
 	@echo ... src/sprite.obj
 	@echo ... src/sprite.i
 	@echo ... src/sprite.s
+	@echo ... src/spriteBatch.obj
+	@echo ... src/spriteBatch.i
+	@echo ... src/spriteBatch.s
 	@echo ... src/textureHandler.obj
 	@echo ... src/textureHandler.i
 	@echo ... src/textureHandler.s

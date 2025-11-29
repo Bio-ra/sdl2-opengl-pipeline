@@ -1,5 +1,4 @@
-#ifndef QUAD_H
-#define QUAD_H
+#pragma once
 
 #include <GL/glew.h>
 
@@ -10,7 +9,7 @@ extern GLuint quadEBO;
 
 // Function declarations
 void CreateQuadGeometry();
+void UpdateQuadBuffer(const float* vertices, int quadCount);
 void DrawQuad();
+void DrawQuads(int quadCount);
 void DeleteQuadGeometry();
-
-#endif // QUAD_H
