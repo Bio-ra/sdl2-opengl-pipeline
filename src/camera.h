@@ -2,7 +2,6 @@
 
 #include "transformation.h"
 
-// Minimal 2D camera for your renderer (pixel coordinates).
 // Position = world-space center (pixels). rotation = radians. zoom = scale (>0).
 struct Camera2D {
     float x = 0.0f, y = 0.0f, rotation = 0.0f, zoom = 1.0f;
@@ -19,12 +18,12 @@ struct Camera2D {
     void setZoom(float z);
     void zoomBy(float factor);
 
-    // View matrix: transforms world -> camera space (inverse camera transform)
+    // view matrix: transforms world -> camera space 
     Mat3 getViewMatrix() const;
 
-    // Projection helper that wraps Mat3::OrthoFromScreen
+    // projection helper that wraps Mat3::OrthoFromScreen
     Mat3 getProjectionFromScreen(float width, float height, bool originTopLeft = true) const;
 
-    // Convenience: combined projection * view
+    // combined projection * view
     Mat3 getViewProjection(float width, float height, bool centerOrigin, bool includeZoom = true) const;
 };

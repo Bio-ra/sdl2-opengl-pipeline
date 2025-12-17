@@ -8,7 +8,7 @@
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
 
-// Global window and GL context (accessible for now)
+// Global window and GL context
 extern SDL_Window* window;
 extern SDL_GLContext glContext;
 
@@ -17,4 +17,4 @@ void InitialiseProgram();
 void MainLoop();
 void Cleanup();
 
-#endif // APP_H
+#endif

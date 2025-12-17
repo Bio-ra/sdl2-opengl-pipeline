@@ -64,6 +64,7 @@
         "GLEW",
         "Integerv",
         "keysym",
+        "MOUSEMOTION",
         "OPENGL",
         "Parameteri",
         "SDLK",

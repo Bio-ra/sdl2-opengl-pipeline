@@ -15,11 +15,11 @@ public:
     void use();
     GLuint getID() const;
     
-    // For colors, positions, etc.
+    // colors, positions
     void setFloat(const std::string& name, float value);
     void setInt(const std::string& name, int value);
     
-    // For texture binding
+    // texture binding
     void setTexture(const std::string& name, GLuint textureID, int unit);
 };
 

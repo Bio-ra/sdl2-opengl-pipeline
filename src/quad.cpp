@@ -43,10 +43,8 @@ void CreateQuadGeometry() {
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // glBindBuffer(GL_ARRAY_BUFFER, 0); // not needed
     glBindVertexArray(0);
 
-    // std::cout << "Dynamic quad geometry created (capacity " << MAX_QUADS << " quads)" << std::endl;
 }
 
 // #################################################
@@ -56,7 +54,6 @@ void UpdateQuadBuffer(const float* vertices, int quadCount) {
     if (quadCount <= 0) return;
 
     glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
-    // GLsizeiptr size = (GLsizeiptr)quadCount * VERTICES_PER_QUAD * 4 * sizeof(float);
     glBufferSubData(GL_ARRAY_BUFFER, 0, quadCount * VERTICES_PER_QUAD * 4 * sizeof(float), vertices);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
@@ -72,7 +69,6 @@ void DrawQuads(int quadCount) {
     if (quadCount <= 0) return;
 
     glBindVertexArray(quadVAO);
-    // GLsizei indexCount = quadCount * INDICES_PER_QUAD;
     glDrawElements(GL_TRIANGLES, quadCount * INDICES_PER_QUAD, GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
 }
@@ -81,17 +77,14 @@ void DrawQuads(int quadCount) {
 // Delete Quad Geometry
 // #################################################
 void DeleteQuadGeometry() {
-    // if (quadVAO != 0) {
     if (quadVAO) {
         glDeleteVertexArrays(1, &quadVAO);
         quadVAO = 0;
     }
-    // if (quadVBO != 0) {
     if (quadVBO) {
         glDeleteBuffers(1, &quadVBO);
         quadVBO = 0;
     }
-    // if (quadEBO != 0) {
     if (quadEBO) {
         glDeleteBuffers(1, &quadEBO);
         quadEBO = 0;

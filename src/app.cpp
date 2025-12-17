@@ -35,19 +35,15 @@ void InitialiseProgram() {
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
 
-    // window = SDL_CreateWindow(
-    //     "Window",
-    //     SDL_WINDOWPOS_UNDEFINED,
-    //     SDL_WINDOWPOS_UNDEFINED,
-    //     SCREEN_WIDTH,
-    //     SCREEN_HEIGHT,
-    //     SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL
-    // );
+     window = SDL_CreateWindow(
+         "Window",
+         SDL_WINDOWPOS_UNDEFINED,
+         SDL_WINDOWPOS_UNDEFINED,
+         SCREEN_WIDTH,
+         SCREEN_HEIGHT,
+         SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL
+     );
 
-    window = SDL_CreateWindow("Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-                               SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
-
-    // if (window == nullptr) {
     if (!window) {
         std::cerr << "SDL_Error: " << SDL_GetError() << std::endl;
         SDL_Quit();
@@ -55,7 +51,7 @@ void InitialiseProgram() {
     }
 
     glContext = SDL_GL_CreateContext(window);
-    // if (glContext == nullptr) {
+
     if (!glContext) {
         std::cerr << "OpenGL context could not be created! SDL_Error: " << SDL_GetError() << std::endl;
         SDL_DestroyWindow(window);
@@ -63,12 +59,9 @@ void InitialiseProgram() {
         exit(-1);
     }
 
+    // GLEW initialization
     glewExperimental = GL_TRUE;
-    // GLenum glewStatus = glewInit();
-    // if (glewStatus != GLEW_OK) {
     if (glewInit() != GLEW_OK) {
-        // std::cerr << "Failed to initialize GLEW: "
-        //           << glewGetErrorString(glewStatus) << std::endl;
         std::cerr << "GLEW init failed" << std::endl;
         SDL_GL_DeleteContext(glContext);
         SDL_DestroyWindow(window);
@@ -80,7 +73,8 @@ void InitialiseProgram() {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 
     glEnable(GL_BLEND);
-    // Prefer separate to handle color and alpha correctly
+
+    // prefer separate to handle color and alpha correctly
     glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 
     CreateQuadGeometry();
@@ -91,6 +85,8 @@ void InitialiseProgram() {
 // #################################################
 
 void MainLoop() {
+
+
     bool running = true;
     SDL_Event e;
 
@@ -140,31 +136,24 @@ void MainLoop() {
     if (locSampler >= 0) glUniform1i(locSampler, 0);
     if (locTint >= 0) glUniform4f(locTint, 1.0f, 1.0f, 1.0f, 1.0f);
     
-    // Create camera (safe: initialized after uniforms, before loop)
-    // Camera2D camera((float)SCREEN_WIDTH * 0.5f, (float)SCREEN_HEIGHT * 0.5f, 0.0f, 1.0f);
+    // Create camera
     Camera2D camera(SCREEN_WIDTH * 0.5f, SCREEN_HEIGHT * 0.5f, 0.0f, 1.0f);
     
     // Mouse drag state
     bool isDragging = false;
-    // int lastMouseX = 0;
-    // int lastMouseY = 0;
     int lastMouseX = 0, lastMouseY = 0;
     
-    // timing / animation state (put before the main loop)
+    // timing / animation state
     Uint64 perfFreq = SDL_GetPerformanceFrequency();
     Uint64 lastTicks = SDL_GetPerformanceCounter();
     float animTime = 0.0f;
+    // set FPS
     const float animFPS = 8.0f;
 
     while (running) {
 
         // ##### SDL POLL EVENT #####
-        // while (SDL_PollEvent(&e) != 0) {
         while (SDL_PollEvent(&e)) {
-            // if (e.type == SDL_QUIT) running = false;
-            // else if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) {
-            //     running = false;
-            // }
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
                 running = false;
             }
@@ -176,29 +165,17 @@ void MainLoop() {
             else if (e.type == SDL_MOUSEBUTTONUP && e.button.button == SDL_BUTTON_LEFT) {
                 isDragging = false;
             }
-            // else if (e.type == SDL_MOUSEMOTION && isDragging) { //drag
             else if (e.type == SDL_MOUSEMOTION && isDragging) {
-                // int dx = e.motion.x - lastMouseX;
-                // int dy = e.motion.y - lastMouseY;
-                // camera.move((float)-dx, (float)-dy);
                 camera.move(-(e.motion.x - lastMouseX), -(e.motion.y - lastMouseY));
                 lastMouseX = e.motion.x;
                 lastMouseY = e.motion.y;
             }
             else if (e.type == SDL_MOUSEWHEEL) {
-                // if (e.wheel.y > 0) camera.zoomBy(1.0f/1.1f);      // zoom
-                // else if (e.wheel.y < 0) camera.zoomBy(1.1f);
                 camera.zoomBy(e.wheel.y > 0 ? 1.0f / 1.1f : 1.1f);
             }
-            // else if (e.type == SDL_WINDOWEVENT &&
-            //          (e.window.event == SDL_WINDOWEVENT_RESIZED ||  //remake viewport on resize
-            //           e.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)) {
             else if (e.type == SDL_WINDOWEVENT && 
                      (e.window.event == SDL_WINDOWEVENT_RESIZED || 
                       e.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)) {
-                // int newW = e.window.data1;
-                // int newH = e.window.data2;
-                // glViewport(0, 0, newW, newH);
                 glViewport(0, 0, e.window.data1, e.window.data2);
             }
         }
@@ -207,7 +184,6 @@ void MainLoop() {
         shader.use();
 
         // Get current window size (handle resizing) and upload camera view-projection
-        // int winW = SCREEN_WIDTH, winH = SCREEN_HEIGHT;
         int winW, winH;
         SDL_GetWindowSize(window, &winW, &winH);
 
@@ -224,9 +200,6 @@ void MainLoop() {
 
         // Update sprite animation frame based on time
         Uint64 currentTicks = SDL_GetPerformanceCounter();
-        // Uint64 deltaTicks = currentTicks - lastTicks;
-        // lastTicks = currentTicks;
-        // animTime += (float)deltaTicks / (float)perfFreq;
         animTime += (float)(currentTicks - lastTicks) / perfFreq;
         lastTicks = currentTicks;
         if (animTime >= 1.0f / animFPS) {
@@ -251,12 +224,10 @@ void Cleanup() {
 
     if (glContext) {
         SDL_GL_DeleteContext(glContext);
-        // glContext = nullptr;
     }
 
     if (window) {
         SDL_DestroyWindow(window);
-        // window = nullptr;
     }
 
     SDL_Quit();

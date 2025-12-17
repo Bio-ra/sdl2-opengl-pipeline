@@ -19,27 +19,7 @@ void SpriteBatch::begin() {
 void SpriteBatch::appendQuadVerts(float x, float y, float w, float h,
                                   float u0, float v0, float u1, float v1)
 {
-    // top-left
-    // m_vertices.push_back(x);
-    // m_vertices.push_back(y);
-    // m_vertices.push_back(u0);
-    // m_vertices.push_back(v0);
-    // top-right
-    // m_vertices.push_back(x + w);
-    // m_vertices.push_back(y);
-    // m_vertices.push_back(u1);
-    // m_vertices.push_back(v0);
-    // bottom-right
-    // m_vertices.push_back(x + w);
-    // m_vertices.push_back(y + h);
-    // m_vertices.push_back(u1);
-    // m_vertices.push_back(v1);
-    // bottom-left
-    // m_vertices.push_back(x);
-    // m_vertices.push_back(y + h);
-    // m_vertices.push_back(u0);
-    // m_vertices.push_back(v1);
-    
+
     // cleaner: build array and insert
     float verts[] = {
         x, y, u0, v0,
@@ -57,9 +37,6 @@ void SpriteBatch::draw(Texture* texture,
                        float r, float g, float b, float a)
 {
     assert(texture != nullptr);
-    // if (m_totalQuads >= m_maxQuads) {
-    //     return;
-    // }
     if (m_totalQuads >= m_maxQuads) return;
 
     if (m_groups.empty() ||
